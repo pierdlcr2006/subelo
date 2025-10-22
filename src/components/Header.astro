@@ -21,38 +21,47 @@
                 <i class="bi bi-house-fill"></i>
                 <span>Inicio</span>
             </a>
-            <a href="/semanas/semana02" class="nav-link">
-                <i class="bi bi-lightbulb-fill"></i>
-                <span>Semana 02</span>
-            </a>
-            <a href="/semanas/semana04" class="nav-link">
-                <i class="bi bi-box-fill"></i>
-                <span>Semana 04</span>
-            </a>
-            <a href="/semanas/semana06" class="nav-link">
-                <i class="bi bi-scissors"></i>
-                <span>Semana 06</span>
-            </a>
-            <a href="/semanas/semana08" class="nav-link">
-                <i class="bi bi-puzzle-fill"></i>
-                <span>Semana 08</span>
-            </a>
-            <a href="/semanas/semana10" class="nav-link">
-                <i class="bi bi-cpu-fill"></i>
-                <span>Semana 10</span>
-            </a>
-            <a href="/semanas/semana12" class="nav-link">
-                <i class="bi bi-code-slash"></i>
-                <span>Semana 12</span>
-            </a>
-            <a href="/semanas/semana14" class="nav-link">
-                <i class="bi bi-clipboard-data-fill"></i>
-                <span>Semana 14</span>
-            </a>
-            <a href="/semanas/semana16" class="nav-link">
-                <i class="bi bi-trophy-fill"></i>
-                <span>Semana 16</span>
-            </a>
+            <div class="semanas-dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="semanasToggle">
+                    <i class="bi bi-lightbulb-fill"></i>
+                    <span>Semanas</span>
+                    <i class="bi bi-chevron-down dropdown-icon"></i>
+                </a>
+                <div class="semanas-submenu">
+                    <a href="/semanas/semana02" class="nav-link submenu-item">
+                        <i class="bi bi-lightbulb-fill"></i>
+                        <span>Semana 02</span>
+                    </a>
+                    <a href="/semanas/semana04" class="nav-link submenu-item">
+                        <i class="bi bi-box-fill"></i>
+                        <span>Semana 04</span>
+                    </a>
+                    <a href="/semanas/semana06" class="nav-link submenu-item">
+                        <i class="bi bi-scissors"></i>
+                        <span>Semana 06</span>
+                    </a>
+                    <a href="/semanas/semana08" class="nav-link submenu-item">
+                        <i class="bi bi-puzzle-fill"></i>
+                        <span>Semana 08</span>
+                    </a>
+                    <a href="/semanas/semana10" class="nav-link submenu-item">
+                        <i class="bi bi-cpu-fill"></i>
+                        <span>Semana 10</span>
+                    </a>
+                    <a href="/semanas/semana12" class="nav-link submenu-item">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Semana 12</span>
+                    </a>
+                    <a href="/semanas/semana14" class="nav-link submenu-item">
+                        <i class="bi bi-clipboard-data-fill"></i>
+                        <span>Semana 14</span>
+                    </a>
+                    <a href="/semanas/semana16" class="nav-link submenu-item">
+                        <i class="bi bi-trophy-fill"></i>
+                        <span>Semana 16</span>
+                    </a>
+                </div>
+            </div>
             <a href="/innovacion" class="nav-link nav-link-special">
                 <i class="bi bi-rocket-takeoff-fill"></i>
                 <span>Innovación</span>
@@ -65,3 +74,87 @@
         </div>
     </div>
 </header>
+
+<style>
+.semanas-dropdown {
+    position: relative;
+}
+
+.semanas-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: auto;
+    min-width: 200px;
+}
+
+.semanas-dropdown:hover .semanas-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--surface);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    font-size: 0.8rem;
+}
+
+.submenu-item:hover {
+    background: var(--accent-primary);
+    color: white;
+    transform: translateX(5px);
+}
+
+.submenu-item i {
+    font-size: 0.9rem;
+}
+
+.submenu-item span {
+    font-weight: 500;
+}
+
+.dropdown-toggle .dropdown-icon {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.semanas-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .semanas-submenu {
+        display: none;
+    }
+
+    .main-nav.active .semanas-submenu {
+        display: flex;
+        position: static;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+}
+</style>

@@ -5,26 +5,2377 @@ import Header from '../../components/Header.astro';
 // Página Semana 04
 ---
 
-<BaseLayout title="Semana 04 - En Desarrollo | ErgoWave">
+<BaseLayout title="Semana 04 - ErgoWave Mouse | ErgoWave">
     <div slot="header">
         <Header />
         <Breadcrumb items={[
             { label: 'Inicio', href: '/' },
             { label: 'Proyecto', href: '/' },
-            { label: 'Semana 04 - En Desarrollo' }
+            { label: 'Semana 04 - ErgoWave Mouse' }
         ]} />
     </div>
 
     <div class="week-content">
         <div class="week-header">
-            <h1>Semana 04 – En Desarrollo</h1>
-            <p class="week-subtitle">Contenido en construcción...</p>
+            <h1>Semana 04</h1>
+            <p class="week-subtitle">Diseño y Prototipado 3D del Mouse Ergonómico Inteligente</p>
         </div>
 
-        <div class="construction-message">
-            <i class="bi bi-tools"></i>
-            <h2>Esta semana está en desarrollo</h2>
-            <p>Estamos trabajando en el contenido de esta sección. ¡Vuelve pronto!</p>
+        <!-- Proyecto Header -->
+        <section class="project-header-section">
+            <div class="project-badge">
+                <i class="bi bi-mouse"></i>
+                <span>Proyecto Principal</span>
+            </div>
+            <h2 class="project-title">ErgoWave – Mouse Ergonómico Inteligente</h2>
+            <p class="project-description">Innovación en ergonomía digital para mejorar la salud y productividad de estudiantes y trabajadores</p>
+        </section>
+
+        <!-- Objetivo Section -->
+        <section class="objetivo-section">
+            <div class="objetivo-container">
+                <div class="objetivo-icon-wrapper">
+                    <div class="objetivo-icon">
+                        <i class="bi bi-bullseye"></i>
+                    </div>
+                    <div class="objetivo-rings">
+                        <div class="obj-ring ring-1"></div>
+                        <div class="obj-ring ring-2"></div>
+                    </div>
+                </div>
+                <div class="objetivo-content">
+                    <h3>Objetivo del Proyecto</h3>
+                    <p>Nuestro objetivo es crear un prototipo funcional de mouse ergonómico que integre un sistema de vibración terapéutica y una luz LED para recordatorios de descanso, orientado a estudiantes y trabajadores que pasan largas jornadas frente al computador.</p>
+                    <div class="objetivo-highlights">
+                        <div class="obj-highlight">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Vibración Terapéutica</span>
+                        </div>
+                        <div class="obj-highlight">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>LED Recordatorio</span>
+                        </div>
+                        <div class="obj-highlight">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Diseño Ergonómico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Herramienta Utilizada Section -->
+        <section class="tool-section">
+            <div class="tool-container">
+                <div class="tool-content">
+                    <div class="tool-header">
+                        <i class="bi bi-tools"></i>
+                        <h3>Herramienta Utilizada</h3>
+                    </div>
+                    <p class="tool-description">Tinkercad fue la plataforma elegida para diseñar el prototipo en 3D.</p>
+                    <div class="tool-features">
+                        <div class="tool-feature">
+                            <i class="bi bi-box"></i>
+                            <span>Modelado 3D Intuitivo</span>
+                        </div>
+                        <div class="tool-feature">
+                            <i class="bi bi-cloud"></i>
+                            <span>Plataforma en la Nube</span>
+                        </div>
+                        <div class="tool-feature">
+                            <i class="bi bi-share"></i>
+                            <span>Colaboración en Tiempo Real</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-logo">
+                    <div class="logo-wrapper">
+                        <img src="/images/semana04/logotinkercad.png" alt="Tinkercad Logo" loading="lazy">
+                        <div class="logo-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desarrollo del Modelado 3D Section -->
+        <section class="modelado-section">
+            <div class="modelado-header">
+                <div class="modelado-badge">
+                    <i class="bi bi-box-seam"></i>
+                    <span>Proceso de Diseño</span>
+                </div>
+                <h2>Desarrollo del Modelado 3D</h2>
+                <p class="modelado-subtitle">Proceso paso a paso de la construcción del prototipo</p>
+            </div>
+
+            <!-- Base Inicial -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">01</div>
+                    <h3>Base Inicial</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-1-circle-fill"></i>
+                            </div>
+                            <p>Arrastramos un rectángulo plano desde la paleta de Tinkercad para usarlo como base del mouse.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-2-circle-fill"></i>
+                            </div>
+                            <p>Sobre la parte central colocamos un cilindro y lo elevamos ligeramente para que quedara como eje de referencia.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-3-circle-fill"></i>
+                            </div>
+                            <p>Ambos elementos los alineamos visualmente al centro y los agrupamos para mantener todo simétrico en los siguientes pasos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen1_semana4.png" alt="Base Inicial - Paso 1" loading="lazy" onclick="openLightbox('/images/semana04/Imagen1_semana4.png', 'Rectángulo base')">
+                                    <p class="carousel-caption">Rectángulo base</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen2_semana4.png" alt="Base Inicial - Paso 2" loading="lazy" onclick="openLightbox('/images/semana04/Imagen2_semana4.png', 'Cilindro elevado')">
+                                    <p class="carousel-caption">Cilindro elevado</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen3_semana4.png" alt="Base Inicial - Paso 3" loading="lazy" onclick="openLightbox('/images/semana04/Imagen3_semana4.png', 'Elementos agrupados')">
+                                    <p class="carousel-caption">Elementos agrupados</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primer Volumen -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">02</div>
+                    <h3>Primer Volumen</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-1-circle-fill"></i>
+                            </div>
+                            <p>Duplicamos el bloque tres veces.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-2-circle-fill"></i>
+                            </div>
+                            <p>Uno quedó abajo, fijo, como base.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-3-circle-fill"></i>
+                            </div>
+                            <p>Otro lo hicimos transparente para usarlo como guía.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-4-circle-fill"></i>
+                            </div>
+                            <p>El tercero lo subimos apenas, solo para empezar a darle altura al cuerpo; todavía no era la parte que toca la mano, sino el primer paso para dejar de ser un rectángulo plano.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen4_semana4.png" alt="Primer Volumen - Paso 1" loading="lazy" onclick="openLightbox('/images/semana04/Imagen4_semana4.png', 'Bloques duplicados')">
+                                    <p class="carousel-caption">Bloques duplicados</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen5_semana4.png" alt="Primer Volumen - Paso 2" loading="lazy" onclick="openLightbox('/images/semana04/Imagen5_semana4.png', 'Guía transparente')">
+                                    <p class="carousel-caption">Guía transparente</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen6_semana4.png" alt="Primer Volumen - Paso 3" loading="lazy" onclick="openLightbox('/images/semana04/Imagen6_semana4.png', 'Altura inicial')">
+                                    <p class="carousel-caption">Altura inicial</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redondear el bloque -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">03</div>
+                    <h3>Redondear el Bloque</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <p class="step-intro">El cuerpo todavía conservaba un aspecto rígido, semejante a un borrador sin pulir, por lo que se eliminaron las aristas más marcadas:</p>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-1-circle-fill"></i>
+                            </div>
+                            <p>Se añadieron pequeños cilindros en las esquinas frontales para redondear la "nariz" del mouse.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-2-circle-fill"></i>
+                            </div>
+                            <p>En la parte posterior se colocó un rectángulo curvado, destinado a ser el área de apoyo para la palma.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <p>Con estos sencillos ajustes, el bloque comenzó a asemejarse a un mouse real, dejando atrás la apariencia de una figura cúbica y tosca.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen7_semana4 .png" alt="Redondear - Paso 1" loading="lazy" onclick="openLightbox('/images/semana04/Imagen7_semana4 .png', 'Redondear esquinas frontales')">
+                                    <p class="carousel-caption">Redondear esquinas frontales</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen8_semana4.png" alt="Redondear - Paso 2" loading="lazy" onclick="openLightbox('/images/semana04/Imagen8_semana4.png', 'Cilindros en esquinas')">
+                                    <p class="carousel-caption">Cilindros en esquinas</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen9_semana4.png" alt="Redondear - Paso 3" loading="lazy" onclick="openLightbox('/images/semana04/Imagen9_semana4.png', 'Rectángulo curvado posterior')">
+                                    <p class="carousel-caption">Rectángulo curvado posterior</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen10_semana4.png" alt="Redondear - Paso 4" loading="lazy" onclick="openLightbox('/images/semana04/Imagen10_semana4.png', 'Forma redondeada')">
+                                    <p class="carousel-caption">Forma redondeada</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen11_semana4.png" alt="Redondear - Paso 5" loading="lazy" onclick="openLightbox('/images/semana04/Imagen11_semana4.png', 'Resultado final redondeado')">
+                                    <p class="carousel-caption">Resultado final redondeado</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 3)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marcando los clics -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">04</div>
+                    <h3>Marcando los Clics</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <p class="step-intro">Para diferenciar los botones izquierdo y derecho sin alterar la forma general, se realizó una delgada ranura en la parte frontal:</p>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-scissors"></i>
+                            </div>
+                            <p><strong>Corte central:</strong> se utilizó un rectángulo muy fino, semejante al grosor de una hoja de papel, que atravesó la parte delantera.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-rulers"></i>
+                            </div>
+                            <p><strong>Profundidad controlada:</strong> se hundió únicamente lo necesario para que la división fuera visible, sin separar aún las piezas.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                            <p><strong>Guía visual:</strong> la ranura funcionó como una línea de referencia que posteriormente facilitaría la colocación precisa de los botones.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <p>Gracias a este pequeño corte, el modelo comenzó a adoptar la identidad visual de un mouse, alejándose del aspecto de una pieza sólida.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen12_semana4.png" alt="Marcando clics - Paso 1" loading="lazy" onclick="openLightbox('/images/semana04/Imagen12_semana4.png', 'Corte central fino')">
+                                    <p class="carousel-caption">Corte central fino</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen13_semana4.png" alt="Marcando clics - Paso 2" loading="lazy" onclick="openLightbox('/images/semana04/Imagen13_semana4.png', 'Rectángulo delgado')">
+                                    <p class="carousel-caption">Rectángulo delgado</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen14_semana4.png" alt="Marcando clics - Paso 3" loading="lazy" onclick="openLightbox('/images/semana04/Imagen14_semana4.png', 'Profundidad controlada')">
+                                    <p class="carousel-caption">Profundidad controlada</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen15_semana4.png" alt="Marcando clics - Paso 4" loading="lazy" onclick="openLightbox('/images/semana04/Imagen15_semana4.png', 'División visible')">
+                                    <p class="carousel-caption">División visible</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen16_semana4.png" alt="Marcando clics - Paso 5" loading="lazy" onclick="openLightbox('/images/semana04/Imagen16_semana4.png', 'Guía visual')">
+                                    <p class="carousel-caption">Guía visual</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen17_semana4.png" alt="Marcando clics - Paso 6" loading="lazy" onclick="openLightbox('/images/semana04/Imagen17_semana4.png', 'Ranura completa')">
+                                    <p class="carousel-caption">Ranura completa</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen18_semana4.png" alt="Marcando clics - Paso 7" loading="lazy" onclick="openLightbox('/images/semana04/Imagen18_semana4.png', 'Identidad de mouse')">
+                                    <p class="carousel-caption">Identidad de mouse</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 3)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 4)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 5)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 6)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marca de espacio -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">05</div>
+                    <h3>Marca de Espacio</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-square-fill"></i>
+                            </div>
+                            <p>Se dejó un hueco central, justo detrás de la ranura, reservado para la futura rueda de desplazamiento y dos botones adicionales.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-bookmark-fill"></i>
+                            </div>
+                            <p>En esta fase, el hueco solo servía como referencia estructural, mientras se continuaba dando forma a la curvatura del cuerpo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen19_semana4.png" alt="Marca de espacio - Paso 1" loading="lazy" onclick="openLightbox('/images/semana04/Imagen19_semana4.png', 'Hueco central')">
+                                    <p class="carousel-caption">Hueco central</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen20_semana4.png" alt="Marca de espacio - Paso 2" loading="lazy" onclick="openLightbox('/images/semana04/Imagen20_semana4.png', 'Espacio para rueda')">
+                                    <p class="carousel-caption">Espacio para rueda</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen21_semana4.png" alt="Marca de espacio - Paso 3" loading="lazy" onclick="openLightbox('/images/semana04/Imagen21_semana4.png', 'Referencia estructural')">
+                                    <p class="carousel-caption">Referencia estructural</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eliminando la "caja" de los costados -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">06</div>
+                    <h3>Eliminando la "Caja" de los Costados</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-circle"></i>
+                            </div>
+                            <p>Se copió un cilindro ancho, se posicionó lateralmente y se hundió ligeramente en los bordes del modelo.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-bezier2"></i>
+                            </div>
+                            <p>Con este corte suave, desaparecieron las paredes rectas y surgió una forma más fluida, con una leve "cintura" que suavizó el perfil lateral.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <p>Aunque aún no era la forma definitiva, el cuerpo ya había perdido su aspecto rectangular y comenzó a verse más aerodinámico.</p>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="/images/semana04/Imagen22_semana4.png" alt="Eliminando caja lateral" loading="lazy" onclick="openLightbox('/images/semana04/Imagen22_semana4.png', 'Perfil lateral suavizado')">
+                            </div>
+                            <p class="gallery-caption">Perfil lateral suavizado</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen22_semana4.png" alt="Eliminando caja lateral" loading="lazy" onclick="openLightbox('/images/semana04/Imagen22_semana4.png', 'Perfil lateral suavizado')">
+                                    <p class="carousel-caption">Perfil lateral suavizado</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puente "rectángulo + cilindro" -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">07</div>
+                    <h3>Puente "Rectángulo + Cilindro"</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-1-circle-fill"></i>
+                            </div>
+                            <p>Se insertó un rectángulo plano y, sobre él, un cilindro colocado como una viga.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-2-circle-fill"></i>
+                            </div>
+                            <p>Al agrupar ambos, se formó un pequeño puente arqueado.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-3-circle-fill"></i>
+                            </div>
+                            <p>Este conjunto se centró sobre la parte superior del cuerpo, y al restarlo, la zona posterior (para la palma) quedó ligeramente más elevada, mientras que la delantera (para los clics) resultó más baja.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <p>Así se logró la primera sensación de curvatura ergonómica sin comprometer la simplicidad del modelo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen23_semana4.png" alt="Puente - Paso 1" loading="lazy" onclick="openLightbox('/images/semana04/Imagen23_semana4.png', 'Puente arqueado')">
+                                    <p class="carousel-caption">Puente arqueado</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen24_semana4.png" alt="Puente - Paso 2" loading="lazy" onclick="openLightbox('/images/semana04/Imagen24_semana4.png', 'Curvatura ergonómica')">
+                                    <p class="carousel-caption">Curvatura ergonómica</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Triple clon para dar relieve a los bordes -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">08</div>
+                    <h3>Triple Clon para Dar Relieve a los Bordes</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-1-circle-fill"></i>
+                            </div>
+                            <p>Se duplicó el cuerpo completo tres veces.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-2-circle-fill"></i>
+                            </div>
+                            <p>Uno permaneció intacto, sirviendo como "cáscara" exterior.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-3-circle-fill"></i>
+                            </div>
+                            <p>Otro se aplanó hasta transformarse en una lámina delgada y se centró dentro del original; al aplicar transparencia, funcionó como guía hueca.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <p>Con esta lámina de referencia, se recortaron los laterales, creando un pequeño escalón que rompió el perfil liso y permitió distinguir claramente el límite entre los botones de clic y el área de apoyo de la palma.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen25_semana4.png" alt="Triple clon - Paso 1" loading="lazy" onclick="openLightbox('/images/semana04/Imagen25_semana4.png', 'Cuerpo duplicado')">
+                                    <p class="carousel-caption">Cuerpo duplicado</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen26_semana4.png" alt="Triple clon - Paso 2" loading="lazy" onclick="openLightbox('/images/semana04/Imagen26_semana4.png', 'Lámina guía')">
+                                    <p class="carousel-caption">Lámina guía</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen27_semana4.png" alt="Triple clon - Paso 3" loading="lazy" onclick="openLightbox('/images/semana04/Imagen27_semana4.png', 'Escalón lateral')">
+                                    <p class="carousel-caption">Escalón lateral</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Retoques finales antes de la versión imprimible -->
+            <div class="step-container">
+                <div class="step-header">
+                    <div class="step-number">09</div>
+                    <h3>Retoques Finales Antes de la Versión Imprimible</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-1-circle-fill"></i>
+                            </div>
+                            <p>Se bajó el semicírculo guía que se había dejado flotando y se ancló en el fondo del hueco central, convirtiéndose en un alojamiento real para la rueda y los mini-botones.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-2-circle-fill"></i>
+                            </div>
+                            <p>A ambos lados se añadieron dos cilindros más pequeños, únicamente con fines estéticos, para que el conjunto no quedara visualmente vacío.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <p>Todo el modelo continuó siendo una sola pieza; la separación en componentes (base, tapa y botones) se realizaría posteriormente, al convertir el bloque en una versión preparada para impresión.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen28_semana4.png" alt="Retoques finales - Paso 1" loading="lazy" onclick="openLightbox('/images/semana04/Imagen28_semana4.png', 'Semicírculo anclado')">
+                                    <p class="carousel-caption">Semicírculo anclado</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen29_semana4.png" alt="Retoques finales - Paso 2" loading="lazy" onclick="openLightbox('/images/semana04/Imagen29_semana4.png', 'Alojamiento para rueda')">
+                                    <p class="carousel-caption">Alojamiento para rueda</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen30_semana4.png" alt="Retoques finales - Paso 3" loading="lazy" onclick="openLightbox('/images/semana04/Imagen30_semana4.png', 'Cilindros estéticos')">
+                                    <p class="carousel-caption">Cilindros estéticos</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen31_semana4.png" alt="Retoques finales - Paso 4" loading="lazy" onclick="openLightbox('/images/semana04/Imagen31_semana4.png', 'Modelo completo')">
+                                    <p class="carousel-caption">Modelo completo</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen32_semana4.png" alt="Retoques finales - Paso 5" loading="lazy" onclick="openLightbox('/images/semana04/Imagen32_semana4.png', 'Listo para separar')">
+                                    <p class="carousel-caption">Listo para separar</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 2)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 3)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Listo para Bambu Lab A1 Mini -->
+            <div class="step-container step-final">
+                <div class="step-header">
+                    <div class="step-number">10</div>
+                    <h3>Listo para Bambu Lab A1 Mini</h3>
+                </div>
+                <div class="step-content">
+                    <div class="step-description">
+                        <p class="step-intro">El archivo .stl se importó a Bambu Studio, se seleccionó material PLA básico y se mantuvieron los parámetros predeterminados:</p>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-gear-fill"></i>
+                            </div>
+                            <p><strong>Calidad:</strong> 0.20 mm</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-columns-gap"></i>
+                            </div>
+                            <p><strong>Soporte:</strong> únicamente en la cavidad central (destinada a la futura rueda)</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-speedometer2"></i>
+                            </div>
+                            <p><strong>Velocidad:</strong> modo estándar, no superior a 60 mm/s, para evitar deformaciones en las curvas más delicadas.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <p>La previsualización indicó un consumo aproximado de <strong>61 gramos</strong> de filamento y un tiempo estimado de <strong>2 horas y 50 minutos</strong>.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-arrows-angle-contract"></i>
+                            </div>
+                            <p>Dado que la duración era considerable, se optó por reducir ligeramente el tamaño del modelo.</p>
+                        </div>
+                        <div class="description-item">
+                            <div class="item-icon">
+                                <i class="bi bi-printer-fill"></i>
+                            </div>
+                            <p>Finalmente, se presionó <strong>"Sincronizar e imprimir"</strong>; la impresora comenzó a calentarse, iniciando el proceso de fabricación del prototipo físico.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <button class="carousel-btn carousel-prev" onclick="moveCarousel(this, -1)">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="/images/semana04/Imagen33_semana4.png" alt="Bambu Lab - Configuración" loading="lazy" onclick="openLightbox('/images/semana04/Imagen33_semana4.png', 'Configuración en Bambu Studio')">
+                                    <p class="carousel-caption">Configuración en Bambu Studio</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="/images/semana04/Imagen34_semana4.png" alt="Bambu Lab - Impresión" loading="lazy" onclick="openLightbox('/images/semana04/Imagen34_semana4.png', 'Proceso de impresión iniciado')">
+                                    <p class="carousel-caption">Proceso de impresión iniciado</p>
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-next" onclick="moveCarousel(this, 1)">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" onclick="goToSlide(this, 0)"></span>
+                            <span class="indicator" onclick="goToSlide(this, 1)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evidencias Adicionales -->
+        <section class="evidencias-section">
+            <div class="evidencias-header">
+                <div class="evidencias-badge">
+                    <i class="bi bi-camera-fill"></i>
+                    <span>Resultado Final</span>
+                </div>
+                <h2>Evidencias Adicionales</h2>
+                <p class="evidencias-subtitle">Del diseño digital a la realidad física: el prototipo ErgoWave cobra vida</p>
+            </div>
+
+            <div class="evidencias-grid">
+                <!-- Impresora -->
+                <div class="evidencia-card evidencia-large">
+                    <div class="evidencia-image" onclick="openLightbox('/images/semana04/Imagen35_semana4.png', 'Bambu Lab A1 Mini en acción')">
+                        <img src="/images/semana04/Imagen35_semana4.png" alt="Bambu Lab A1 Mini en acción" loading="lazy">
+                        <div class="evidencia-overlay">
+                            <i class="bi bi-printer"></i>
+                        </div>
+                    </div>
+                    <div class="evidencia-content">
+                        <div class="evidencia-icon">
+                            <i class="bi bi-printer-fill"></i>
+                        </div>
+                        <h3>Impresora en Acción</h3>
+                        <p>La Bambu Lab A1 Mini trabajando con precisión milimétrica, capa por capa, transformando el diseño digital en un prototipo tangible de PLA.</p>
+                        <div class="evidencia-tags">
+                            <span class="tag">Bambu Lab A1 Mini</span>
+                            <span class="tag">PLA</span>
+                            <span class="tag">0.20mm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resultado 1 -->
+                <div class="evidencia-card">
+                    <div class="evidencia-image" onclick="openLightbox('/images/semana04/Imagen36_semana4.png', 'Prototipo ErgoWave finalizado')">
+                        <img src="/images/semana04/Imagen36_semana4.png" alt="Prototipo ErgoWave finalizado" loading="lazy">
+                        <div class="evidencia-overlay">
+                            <i class="bi bi-check-circle-fill"></i>
+                        </div>
+                    </div>
+                    <div class="evidencia-content">
+                        <div class="evidencia-icon">
+                            <i class="bi bi-box-seam"></i>
+                        </div>
+                        <h3>Prototipo Finalizado</h3>
+                        <p>El mouse ergonómico ErgoWave completamente impreso, mostrando las curvas suaves, los botones definidos y la estructura lista para las pruebas de ergonomía.</p>
+                        <div class="evidencia-stats">
+                            <div class="stat">
+                                <i class="bi bi-clock"></i>
+                                <span>1h 50min</span>
+                            </div>
+                            <div class="stat">
+                                <i class="bi bi-box"></i>
+                                <span>61g PLA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resultado 2 -->
+                <div class="evidencia-card">
+                    <div class="evidencia-image" onclick="openLightbox('/images/semana04/Imagen37_semana4.png', 'Detalle del prototipo ErgoWave')">
+                        <img src="/images/semana04/Imagen37_semana4.png" alt="Detalle del prototipo ErgoWave" loading="lazy">
+                        <div class="evidencia-overlay">
+                            <i class="bi bi-eye-fill"></i>
+                        </div>
+                    </div>
+                    <div class="evidencia-content">
+                        <div class="evidencia-icon">
+                            <i class="bi bi-hand-index-thumb"></i>
+                        </div>
+                        <h3>Detalles Ergonómicos</h3>
+                        <p>Vista detallada que revela la calidad de impresión: ranura central para los clics, cavidad para la rueda de desplazamiento y la curvatura ergonómica perfectamente lograda.</p>
+                        <div class="evidencia-features">
+                            <span><i class="bi bi-check2"></i> Curvas suaves</span>
+                            <span><i class="bi bi-check2"></i> Botones definidos</span>
+                            <span><i class="bi bi-check2"></i> Acabado limpio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evidencias-footer">
+                <div class="footer-icon">
+                    <i class="bi bi-trophy-fill"></i>
+                </div>
+                <p>¡Prototipo ErgoWave completado con éxito! Listo para las pruebas de usabilidad y la siguiente fase de desarrollo.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <div class="lightbox-zoom-controls">
+                <button onclick="zoomIn()" class="zoom-btn"><i class="bi bi-zoom-in"></i></button>
+                <button onclick="zoomOut()" class="zoom-btn"><i class="bi bi-zoom-out"></i></button>
+                <button onclick="resetZoom()" class="zoom-btn"><i class="bi bi-arrow-clockwise"></i></button>
+            </div>
         </div>
     </div>
 </BaseLayout>
+
+<style>
+/* Estilos específicos para Semana 04 */
+.project-header-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+}
+
+.project-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+    animation: floatBadge 3s ease-in-out infinite;
+}
+
+@keyframes floatBadge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.project-badge i {
+    font-size: 1.5rem;
+}
+
+.project-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.project-description {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Objetivo Section */
+.objetivo-section {
+    margin: 5rem 0;
+}
+
+.objetivo-container {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05));
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    border-radius: 30px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.objetivo-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+    animation: rotateBackground 20s linear infinite;
+}
+
+@keyframes rotateBackground {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.objetivo-icon-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.objetivo-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(99, 102, 241, 0.6);
+    z-index: 2;
+    animation: pulseObjetivo 3s ease-in-out infinite;
+}
+
+@keyframes pulseObjetivo {
+    0%, 100% { 
+        box-shadow: 0 0 50px rgba(99, 102, 241, 0.6);
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 70px rgba(99, 102, 241, 0.8);
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.objetivo-icon i {
+    font-size: 3rem;
+    color: white;
+}
+
+.objetivo-rings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.obj-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #6366f1;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.obj-ring.ring-1 {
+    width: 130px;
+    height: 130px;
+    transform: translate(-50%, -50%);
+    animation: ringPulseObj 3s ease-in-out infinite;
+}
+
+.obj-ring.ring-2 {
+    width: 160px;
+    height: 160px;
+    transform: translate(-50%, -50%);
+    animation: ringPulseObj 3s ease-in-out infinite 0.5s;
+}
+
+@keyframes ringPulseObj {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.6; }
+}
+
+.objetivo-content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.objetivo-content h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.objetivo-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.objetivo-highlights {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.obj-highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.obj-highlight:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+    border-color: #6366f1;
+}
+
+.obj-highlight i {
+    color: #6366f1;
+    font-size: 1.25rem;
+}
+
+.obj-highlight span {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Tool Section */
+.tool-section {
+    margin: 5rem 0;
+}
+
+.tool-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.tool-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tool-header i {
+    font-size: 2.5rem;
+    color: #ec4899;
+}
+
+.tool-header h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tool-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.tool-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tool-feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.tool-feature:hover {
+    transform: translateX(10px);
+    border-color: #ec4899;
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.2);
+}
+
+.tool-feature i {
+    font-size: 1.75rem;
+    color: #ec4899;
+}
+
+.tool-feature span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.tool-logo {
+    position: relative;
+}
+
+.logo-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    animation: floatLogo 6s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.logo-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, transparent 70%);
+    filter: blur(30px);
+    animation: pulseLogoGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseLogoGlow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .project-title {
+        font-size: 2.5rem;
+    }
+
+    .objetivo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tool-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-logo {
+        order: -1;
+    }
+
+    .logo-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .objetivo-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .objetivo-highlights {
+        justify-content: center;
+    }
+}
+
+/* Modelado 3D Section */
+.modelado-section {
+    margin: 5rem 0;
+}
+
+.modelado-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.modelado-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+
+.modelado-badge i {
+    font-size: 1.5rem;
+}
+
+.modelado-header h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #10b981, #059669);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.modelado-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+/* Step Container */
+.step-container {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 24px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.step-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.step-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(16, 185, 129, 0.15);
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.step-number {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+    flex-shrink: 0;
+}
+
+.step-header h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.step-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Description Items */
+.step-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.description-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: rgba(16, 185, 129, 0.05);
+    border-left: 4px solid #10b981;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.description-item:hover {
+    background: rgba(16, 185, 129, 0.1);
+    transform: translateX(10px);
+}
+
+.item-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.item-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.description-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Step Intro */
+.step-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(16, 185, 129, 0.05);
+    border-left: 4px solid #10b981;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Gallery */
+.step-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Gallery Multi - para múltiples imágenes en grid */
+.step-gallery-multi {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Step Final - estilo especial para el último paso */
+.step-final {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(5, 150, 105, 0.05));
+    border: 3px solid #10b981;
+}
+
+.step-final .step-number {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+}
+
+.step-final::before {
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
+    box-shadow: 0 20px 60px rgba(16, 185, 129, 0.3);
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.4s ease;
+}
+
+.gallery-image:hover img {
+    transform: scale(1.15);
+}
+
+.image-overlay {
+    display: none;
+}
+
+.gallery-caption {
+    text-align: center;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+/* Responsive Modelado */
+@media (max-width: 968px) {
+    .modelado-header h2 {
+        font-size: 2rem;
+    }
+
+    .step-content {
+        grid-template-columns: 1fr;
+    }
+
+    .step-gallery {
+        order: -1;
+    }
+}
+
+@media (max-width: 640px) {
+    .step-container {
+        padding: 2rem;
+    }
+
+    .step-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-number {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .step-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .description-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Evidencias Section */
+.evidencias-section {
+    margin: 6rem 0;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.03), rgba(168, 85, 247, 0.03));
+    border-radius: 32px;
+}
+
+.evidencias-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.evidencias-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+    animation: float 3s ease-in-out infinite;
+}
+
+.evidencias-badge i {
+    font-size: 1.5rem;
+}
+
+.evidencias-header h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.evidencias-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Evidencias Grid */
+.evidencias-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.evidencia-card {
+    background: var(--surface);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    border: 2px solid var(--border);
+}
+
+.evidencia-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.2);
+    border-color: #8b5cf6;
+}
+
+.evidencia-large {
+    grid-column: span 2;
+}
+
+.evidencia-image {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.evidencia-large .evidencia-image {
+    height: 450px;
+}
+
+.evidencia-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.evidencia-card:hover .evidencia-image img {
+    transform: scale(1.1);
+}
+
+.evidencia-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.9), rgba(168, 85, 247, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.evidencia-card:hover .evidencia-overlay {
+    opacity: 1;
+}
+
+.evidencia-overlay i {
+    font-size: 4rem;
+    color: white;
+}
+
+.evidencia-content {
+    padding: 2rem;
+}
+
+.evidencia-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.evidencia-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.evidencia-content h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.evidencia-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Evidencia Tags */
+.evidencia-tags {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.evidencia-tags .tag {
+    background: rgba(139, 92, 246, 0.1);
+    color: #8b5cf6;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+/* Evidencia Stats */
+.evidencia-stats {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.evidencia-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(139, 92, 246, 0.05);
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.evidencia-stats .stat i {
+    font-size: 1.2rem;
+    color: #8b5cf6;
+}
+
+.evidencia-stats .stat span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Evidencia Features */
+.evidencia-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.evidencia-features span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.evidencia-features i {
+    color: #10b981;
+    font-size: 1.2rem;
+}
+
+/* Evidencias Footer */
+.evidencias-footer {
+    text-align: center;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1));
+    border-radius: 20px;
+    border: 2px solid rgba(139, 92, 246, 0.2);
+}
+
+.footer-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.footer-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.evidencias-footer p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive Evidencias */
+@media (max-width: 968px) {
+    .evidencias-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .evidencias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .evidencia-large {
+        grid-column: span 1;
+    }
+
+    .evidencia-image {
+        height: 300px;
+    }
+
+    .evidencia-large .evidencia-image {
+        height: 350px;
+    }
+}
+
+@media (max-width: 640px) {
+    .evidencias-section {
+        margin: 3rem 0;
+        padding: 2rem 1rem;
+    }
+
+    .evidencias-header h2 {
+        font-size: 2rem;
+    }
+
+    .evidencias-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .evidencia-content {
+        padding: 1.5rem;
+    }
+
+    .evidencia-stats {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .evidencias-footer {
+        padding: 2rem 1.5rem;
+    }
+
+    .evidencias-footer p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox.active {
+    display: flex !important;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 100000;
+    transition: all 0.3s ease;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    color: #8b5cf6;
+    transform: rotate(90deg);
+}
+
+#lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 80px rgba(139, 92, 246, 0.5);
+    transition: transform 0.3s ease;
+    cursor: move;
+}
+
+.lightbox-caption {
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    background: rgba(139, 92, 246, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-zoom-controls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.zoom-btn {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.4);
+}
+
+.zoom-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.6);
+}
+
+.zoom-btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Cursor pointer para imágenes clickeables */
+.evidencia-image {
+    cursor: pointer;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.carousel-slide:hover img {
+    transform: scale(1.02);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #10b981, #059669);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
+    opacity: 0.8;
+}
+
+.carousel-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.6);
+    opacity: 1;
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator:hover {
+    background: #10b981;
+    transform: scale(1.2);
+}
+
+.indicator.active {
+    background: linear-gradient(135deg, #10b981, #059669);
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Responsive Carousel */
+@media (max-width: 640px) {
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+}
+
+</style>
+
+<script>
+    let currentZoom = 1;
+    let isDragging = false;
+    let startX, startY, translateX = 0, translateY = 0;
+
+    function openLightbox(imageSrc, caption) {
+        console.log('openLightbox called with:', imageSrc, caption);
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+
+        if (!lightbox) {
+            console.error('Lightbox element not found!');
+            return;
+        }
+        if (!lightboxImage) {
+            console.error('Lightbox image element not found!');
+            return;
+        }
+        if (!lightboxCaption) {
+            console.error('Lightbox caption element not found!');
+            return;
+        }
+
+        console.log('Setting image src to:', imageSrc);
+        lightboxImage.src = imageSrc;
+        lightboxCaption.textContent = caption;
+
+        console.log('Adding active class to lightbox');
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+
+        // Reset zoom and position
+        currentZoom = 1;
+        translateX = 0;
+        translateY = 0;
+        updateImageTransform();
+        console.log('Lightbox opened successfully');
+    }
+
+    function closeLightbox() {
+        console.log('closeLightbox called');
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            console.log('Lightbox closed successfully');
+        } else {
+            console.error('Lightbox element not found in closeLightbox');
+        }
+    }
+
+    function zoomIn() {
+        currentZoom += 0.2;
+        if (currentZoom > 3) currentZoom = 3;
+        updateImageTransform();
+    }
+
+    function zoomOut() {
+        currentZoom -= 0.2;
+        if (currentZoom < 0.5) currentZoom = 0.5;
+        updateImageTransform();
+    }
+
+    function resetZoom() {
+        currentZoom = 1;
+        translateX = 0;
+        translateY = 0;
+        updateImageTransform();
+    }
+
+    function updateImageTransform() {
+        const lightboxImage = document.getElementById('lightbox-image');
+        lightboxImage.style.transform = `scale(${currentZoom}) translate(${translateX}px, ${translateY}px)`;
+    }
+
+    // Close lightbox when clicking outside the image
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+            lightbox.addEventListener('click', function(e) {
+                console.log('Lightbox clicked, target:', e.target, 'lightbox:', lightbox);
+                if (e.target === lightbox) {
+                    console.log('Closing lightbox from outside click');
+                    closeLightbox();
+                }
+            });
+        }
+
+        // Keyboard controls
+        document.addEventListener('keydown', function(e) {
+            if (lightbox && lightbox.classList.contains('active')) {
+                console.log('Key pressed:', e.key);
+                if (e.key === 'Escape') {
+                    console.log('Escape key pressed, closing lightbox');
+                    closeLightbox();
+                }
+                if (e.key === '+' || e.key === '=') zoomIn();
+                if (e.key === '-') zoomOut();
+                if (e.key === '0') resetZoom();
+            }
+        });
+
+        // Drag functionality
+        const lightboxImage = document.getElementById('lightbox-image');
+
+        if (lightboxImage) {
+            lightboxImage.addEventListener('mousedown', function(e) {
+                if (currentZoom > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                    lightboxImage.style.cursor = 'grabbing';
+                }
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (isDragging) {
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+                    updateImageTransform();
+                }
+            });
+
+            document.addEventListener('mouseup', function() {
+                isDragging = false;
+                if (lightboxImage) lightboxImage.style.cursor = 'move';
+            });
+
+            // Mouse wheel zoom
+            lightboxImage.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                if (e.deltaY < 0) {
+                    zoomIn();
+                } else {
+                    zoomOut();
+                }
+            });
+        }
+    });
+
+    // Carousel Functions
+    function moveCarousel(button, direction) {
+        console.log('Moving carousel:', direction);
+        const wrapper = button.closest('.carousel-wrapper');
+        const track = wrapper.querySelector('.carousel-track');
+        const slides = track.querySelectorAll('.carousel-slide');
+        const indicators = wrapper.parentElement.querySelectorAll('.indicator');
+
+        let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+        let newIndex = currentIndex + direction;
+
+        // Loop around
+        if (newIndex < 0) newIndex = slides.length - 1;
+        if (newIndex >= slides.length) newIndex = 0;
+
+        console.log('Current index:', currentIndex, 'New index:', newIndex);
+        updateCarousel(track, slides, indicators, newIndex);
+    }
+
+    function goToSlide(indicator, index) {
+        console.log('Going to slide:', index);
+        const wrapper = indicator.closest('.carousel-container');
+        const track = wrapper.querySelector('.carousel-track');
+        const slides = track.querySelectorAll('.carousel-slide');
+        const indicators = wrapper.querySelectorAll('.indicator');
+
+        updateCarousel(track, slides, indicators, index);
+    }
+
+    function updateCarousel(track, slides, indicators, newIndex) {
+        console.log('Updating carousel to index:', newIndex);
+        // Update slides
+        slides.forEach((slide, index) => {
+            slide.classList.remove('active');
+            if (index === newIndex) {
+                slide.classList.add('active');
+            }
+        });
+
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+            indicator.classList.remove('active');
+            if (index === newIndex) {
+                indicator.classList.add('active');
+            }
+        });
+
+        // Move track
+        track.style.transform = `translateX(-${newIndex * 100}%)`;
+    }
+
+    // Auto-play carousel - changes every 5 seconds
+    let carouselIntervals = [];
+
+    // Initialize carousels immediately
+    // Call init immediately when script loads
+    console.log('Script loaded, initializing carousels...');
+    setTimeout(initCarousels, 100);
+
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM loaded, checking carousels...');
+        setTimeout(initCarousels, 100);
+    });
+
+    // Also try to initialize after a longer delay
+    setTimeout(() => {
+        console.log('Delayed initialization...');
+        initCarousels();
+    }, 1000);
+
+    // Final fallback initialization
+    setTimeout(() => {
+        console.log('Final initialization attempt...');
+        initCarousels();
+    }, 2000);
+
+    function initCarousels() {
+        console.log('Initializing carousels...');
+        const carousels = document.querySelectorAll('.carousel-container');
+        console.log('Found carousels:', carousels.length);
+
+        carousels.forEach((carousel, index) => {
+            console.log('Setting up carousel', index);
+
+            // Start autoplay for each carousel
+            const intervalId = setInterval(() => {
+                const nextBtn = carousel.querySelector('.carousel-next');
+                if (nextBtn) {
+                    console.log('Auto-advancing carousel', index);
+                    moveCarousel(nextBtn, 1);
+                }
+            }, 5000);
+
+            carouselIntervals.push(intervalId);
+
+            // Add event listeners
+            const buttons = carousel.querySelectorAll('.carousel-btn');
+            const indicators = carousel.querySelectorAll('.indicator');
+            const images = carousel.querySelectorAll('img');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    console.log('Button clicked, pausing autoplay');
+                    pauseAllAutoplay();
+                });
+            });
+
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    console.log('Indicator clicked, pausing autoplay');
+                    pauseAllAutoplay();
+                });
+            });
+
+            images.forEach(image => {
+                image.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    console.log('Image clicked for lightbox:', image.src, image.alt);
+                    pauseAllAutoplay();
+                    // Call openLightbox directly instead of relying on onclick attribute
+                    openLightbox(image.src, image.alt);
+                });
+            });
+        });
+    }
+
+    // Test function to verify lightbox works
+    function testLightbox() {
+        console.log('Testing lightbox...');
+        const firstImage = document.querySelector('.carousel-slide img');
+        if (firstImage) {
+            console.log('Found first image, testing lightbox');
+            openLightbox(firstImage.src, firstImage.alt);
+        } else {
+            console.log('No carousel images found');
+        }
+    }
+
+    // Make functions available globally for testing
+    window.testLightbox = testLightbox;
+    window.moveCarousel = moveCarousel;
+    window.initCarousels = initCarousels;
+
+    console.log('Carousel functions loaded and available globally');
+    console.log('Available functions: testLightbox(), moveCarousel(), initCarousels()');
+</script>

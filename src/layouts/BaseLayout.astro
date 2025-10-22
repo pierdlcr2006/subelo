@@ -45,15 +45,9 @@ const { title, styles } = Astro.props;
             <Footer />
         </slot>
     </div>
-    <script src="/app.js"></script>
+    <script src="/app.js" is:inline></script>
     <script>
-        // Inicializar tema preferido
-        (function initPreferredTheme(){
-            const stored = localStorage.getItem('theme');
-            if (stored) document.documentElement.dataset.theme = stored;
-        })();
-
-        // Mobile Menu Toggle
+        // Mobile Menu Toggle (existing code, but ensuring it's after theme setup)
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');
         const mainNav = document.getElementById('mainNav');
         
@@ -82,26 +76,6 @@ const { title, styles } = Astro.props;
                 if (!mainNav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
                     mainNav.classList.remove('active');
                     mobileMenuToggle.querySelector('i').className = 'bi bi-list';
-                }
-            });
-        }
-
-        // Tema toggle
-        const themeToggle = document.getElementById('themeToggle');
-        if (themeToggle) {
-            themeToggle.addEventListener('click', () => {
-                const currentTheme = document.documentElement.dataset.theme;
-                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-                
-                document.documentElement.dataset.theme = newTheme;
-                localStorage.setItem('theme', newTheme);
-                
-                // Cambiar icono del botón
-                const icon = themeToggle.querySelector('i');
-                if (newTheme === 'light') {
-                    icon.className = 'bi bi-moon-stars-fill';
-                } else {
-                    icon.className = 'bi bi-sun-fill';
                 }
             });
         }
