@@ -2,29 +2,1644 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import Header from '../../components/Header.astro';
-// Página Semana 06
 ---
 
-<BaseLayout title="Semana 06 - En Desarrollo | ErgoWave">
+<BaseLayout title="Semana 06 - Base de Mouse | ErgoWave">
     <div slot="header">
         <Header />
         <Breadcrumb items={[
             { label: 'Inicio', href: '/' },
             { label: 'Proyecto', href: '/' },
-            { label: 'Semana 06 - En Desarrollo' }
+            { label: 'Semana 06 - Base de Mouse' }
         ]} />
     </div>
 
-    <div class="week-content">
-        <div class="week-header">
-            <h1>Semana 06 – En Desarrollo</h1>
-            <p class="week-subtitle">Contenido en construcción...</p>
-        </div>
+    <div class="doc-container">
+        <!-- Hero Section -->
+        <section class="doc-hero">
+            <div class="hero-badge">
+                <i class="bi bi-lightning-charge-fill"></i>
+                <span>SEMANA 06</span>
+            </div>
+            <h1 class="hero-title">Base de Mouse</h1>
+            <p class="hero-subtitle">Diseño y fabricación mediante corte láser de precisión</p>
+        </section>
 
-        <div class="construction-message">
-            <i class="bi bi-tools"></i>
-            <h2>Esta semana está en desarrollo</h2>
-            <p>Estamos trabajando en el contenido de esta sección. ¡Vuelve pronto!</p>
-        </div>
+        <!-- Teoría del Corte Láser -->
+        <section class="doc-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="bi bi-lightbulb-fill"></i>
+                </div>
+                <div class="section-title-group">
+                    <h2>Teoría: Cortador Láser</h2>
+                    <p class="section-subtitle">Fundamentos del proceso de manufactura por láser</p>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <p class="intro-text">
+                    El corte láser es un proceso de manufactura que utiliza un haz de luz altamente concentrado para cortar, marcar o grabar materiales con gran precisión. El láser genera calor intenso que funde o vaporiza el material en un punto específico, mientras un gas auxiliar (aire, oxígeno o nitrógeno) elimina los residuos, logrando bordes limpios y definidos.
+                </p>
+            </div>
+
+            <!-- Tipos de Procesos -->
+            <div class="process-grid">
+                <!-- Corte -->
+                <div class="process-card">
+                    <div class="process-icon cutting">
+                        <i class="bi bi-scissors"></i>
+                    </div>
+                    <h3>Corte (Cutting)</h3>
+                    <p>El láser atraviesa completamente la pieza, separando el material en varias partes. Se utiliza para obtener contornos y piezas completas.</p>
+                    <div class="process-badge">Atraviesa material</div>
+                </div>
+
+                <!-- Marcado -->
+                <div class="process-card">
+                    <div class="process-icon marking">
+                        <i class="bi bi-pen-fill"></i>
+                    </div>
+                    <h3>Marcado (Marking)</h3>
+                    <p>El láser altera la superficie del material sin atravesarlo, dejando una marca visible. Se aplica en logotipos, textos o códigos.</p>
+                    <div class="process-badge">Superficie</div>
+                </div>
+
+                <!-- Grabado -->
+                <div class="process-card">
+                    <div class="process-icon engraving">
+                        <i class="bi bi-layers-fill"></i>
+                    </div>
+                    <h3>Grabado (Engraving)</h3>
+                    <p>Similar al marcado, pero con mayor profundidad, generando relieves visibles en la superficie.</p>
+                    <div class="process-badge">Relieve profundo</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Encastres -->
+        <section class="doc-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="bi bi-puzzle-fill"></i>
+                </div>
+                <div class="section-title-group">
+                    <h2>Encastres en Diseño Láser</h2>
+                    <p class="section-subtitle">Uniones precisas sin pegamentos ni tornillos</p>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <p class="intro-text">
+                    Los encastres permiten unir piezas cortadas sin necesidad de pegamentos o tornillos, utilizando solo la precisión del láser. Algunos tipos comunes son:
+                </p>
+            </div>
+
+            <!-- Tipos de Encastres -->
+            <div class="joint-list">
+                <div class="joint-item">
+                    <div class="joint-number">01</div>
+                    <div class="joint-content">
+                        <h4>Encastre Recto (Finger Joint)</h4>
+                        <p>Piezas con dientes que se entrelazan como un peine.</p>
+                    </div>
+                </div>
+
+                <div class="joint-item">
+                    <div class="joint-number">02</div>
+                    <div class="joint-content">
+                        <h4>Ranura y Lengüeta (Slot & Tab)</h4>
+                        <p>Una pieza tiene una pestaña que encaja en la ranura de otra.</p>
+                    </div>
+                </div>
+
+                <div class="joint-item">
+                    <div class="joint-number">03</div>
+                    <div class="joint-content">
+                        <h4>Encastre en Cruz (Cross Joint)</h4>
+                        <p>Dos piezas se atraviesan mutuamente mediante ranuras en el centro.</p>
+                    </div>
+                </div>
+
+                <div class="joint-item">
+                    <div class="joint-number">04</div>
+                    <div class="joint-content">
+                        <h4>Encastre a Presión (Press-fit)</h4>
+                        <p>Se utilizan tolerancias ajustadas para que las piezas encajen firmemente por fricción.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Herramienta -->
+        <section class="doc-section tool-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="bi bi-tools"></i>
+                </div>
+                <div class="section-title-group">
+                    <h2>Herramienta Utilizada</h2>
+                    <p class="section-subtitle">Plataforma de diseño 2D profesional</p>
+                </div>
+            </div>
+
+            <div class="tool-showcase">
+                <div class="tool-info">
+                    <h3>Onshape</h3>
+                    <p>Onshape fue la plataforma elegida para diseñar en 2D. Esta herramienta basada en la nube permite crear diseños precisos y colaborativos, ideal para proyectos de corte láser donde la exactitud dimensional es crítica.</p>
+                    <div class="tool-features">
+                        <div class="feature-tag">
+                            <i class="bi bi-cloud-check-fill"></i>
+                            <span>Basado en nube</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="bi bi-rulers"></i>
+                            <span>Precisión 2D</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="bi bi-people-fill"></i>
+                            <span>Colaborativo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-logo">
+                    <img src="/images/semana06/logoonshape.png" alt="Onshape Logo" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Desarrollo del Modelado -->
+        <section class="doc-section modeling-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="bi bi-box-seam"></i>
+                </div>
+                <div class="section-title-group">
+                    <h2>Desarrollo del Modelado</h2>
+                    <p class="section-subtitle">Proceso paso a paso de diseño y construcción</p>
+                </div>
+            </div>
+
+            <!-- Base inicial -->
+            <div class="step-block">
+                <div class="step-header-line">
+                    <div class="step-number-badge">01</div>
+                    <h3>Base Inicial</h3>
+                </div>
+                <p class="step-description">
+                    Se creó un nuevo documento y se seleccionó la vista Front, luego la opción Sketch. A continuación, se utilizó la herramienta de líneas para construir una estructura que serviría como soporte del mouse. Además, se incorporaron variables que permitieron definir con precisión las dimensiones del modelo.
+                </p>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen1_semana6.png" alt="Base inicial - Vista Front" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen2_semana6.png" alt="Base inicial - Variables" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primer desarrollo -->
+            <div class="step-block">
+                <div class="step-header-line">
+                    <div class="step-number-badge">02</div>
+                    <h3>Primer Desarrollo</h3>
+                </div>
+                <p class="step-description">
+                    En esta etapa se emplearon las herramientas Dimension y Vertical para ajustar las medidas del diseño. Finalmente, se aplicó la función Extrude con el fin de otorgar volumen al modelo base.
+                </p>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen3_semana6.png" alt="Primer desarrollo - Dimensiones" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen4_semana6.png" alt="Primer desarrollo - Extrude" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estructura del porta lápices -->
+            <div class="step-block">
+                <div class="step-header-line">
+                    <div class="step-number-badge">03</div>
+                    <h3>Estructura del Porta Lápices</h3>
+                </div>
+                <p class="step-description">
+                    Hasta este punto solo se había elaborado el soporte del mouse. En esta fase se procedió a diseñar la zona donde se ubicarán los lápices, intercalándolos en el centro de la estructura. Por ahora, se definió únicamente la base, que serviría para calcular la posición exacta de cada componente.
+                </p>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen5_semana6.png" alt="Estructura porta lápices - Base" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen6_semana6.png" alt="Estructura porta lápices - Posición" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diseño de las caras -->
+            <div class="step-block">
+                <div class="step-header-line">
+                    <div class="step-number-badge">04</div>
+                    <h3>Diseño de las Caras</h3>
+                </div>
+                <p class="step-description">
+                    Se trazaron las caras que conformarían el porta lápices. Para ello, se seleccionó una de las caras laterales de la base y se dibujó un rectángulo utilizando la variable de altura. Posteriormente, se empleó la herramienta Text para incorporar un diseño tipográfico y generar un hueco decorativo en una de las superficies. Los mismos pasos se repitieron para las demás caras, garantizando uniformidad en todo el modelo.
+                </p>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen7_semana6.png" alt="Diseño de caras - Rectángulo" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen8_semana6.png" alt="Diseño de caras - Variables" loading="lazy">
+                    </div>
+                </div>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen9_semana6.png" alt="Diseño de caras - Texto" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen10_semana6.png" alt="Diseño de caras - Hueco decorativo" loading="lazy">
+                    </div>
+                </div>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen11_semana6.png" alt="Diseño de caras - Repetición" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen12_semana4.png" alt="Diseño de caras - Uniformidad" loading="lazy">
+                    </div>
+                </div>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen13_semana6.png" alt="Diseño de caras - Resultado 1" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen14_semana6.png" alt="Diseño de caras - Resultado 2" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aplicación de perforaciones -->
+            <div class="step-block">
+                <div class="step-header-line">
+                    <div class="step-number-badge">05</div>
+                    <h3>Aplicación de Perforaciones</h3>
+                </div>
+                <p class="step-description">
+                    Se seleccionó la cara correspondiente al soporte principal para realizar un orificio mediante la herramienta Boolean. Este mismo procedimiento se repitió en las demás áreas del soporte, con el fin de mantener coherencia estructural y funcionalidad.
+                </p>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen15_semana6.png" alt="Perforaciones - Boolean" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen16_semana6.png" alt="Perforaciones - Resultado" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organización de las piezas -->
+            <div class="step-block">
+                <div class="step-header-line">
+                    <div class="step-number-badge">06</div>
+                    <h3>Organización de las Piezas</h3>
+                </div>
+                <p class="step-description">
+                    Una vez completadas las partes del modelo, se seleccionaron todas y se agregó el conjunto a la lista de herramientas. En la barra superior se localizó la función Auto Layout, la cual permitió visualizar de manera automática la disposición de las piezas, facilitando el análisis de cantidad y la correcta orientación al momento del corte.
+                </p>
+                <div class="image-grid grid-1">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/Imagen17_semana6.png" alt="Organización - Auto Layout" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preparación y Corte -->
+        <section class="doc-section fabrication-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="bi bi-gear-fill"></i>
+                </div>
+                <div class="section-title-group">
+                    <h2>Fabricación en Fab Lab</h2>
+                    <p class="section-subtitle">Del diseño digital a la pieza física</p>
+                </div>
+            </div>
+
+            <!-- Preparación para el corte -->
+            <div class="fab-block">
+                <div class="fab-header">
+                    <div class="fab-icon">
+                        <i class="bi bi-layout-wtf"></i>
+                    </div>
+                    <div class="fab-title-group">
+                        <h3>Preparación para el Corte en Fab Lab Tecsup</h3>
+                        <p class="fab-subtitle">Optimización del material y configuración del software</p>
+                    </div>
+                </div>
+                <p class="fab-description">
+                    En el laboratorio Fab Lab Tecsup se solicitó el apoyo del profesor para el proceso de corte. Se colocó el material sobre la mesa de trabajo y, desde el software Trotec, se acomodaron cuidadosamente todas las piezas con el objetivo de optimizar el uso del material y evitar solapamientos.
+                </p>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/adicional1_semana6.png" alt="Preparación - Material en mesa" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/adicional2_semana6.png" alt="Preparación - Software Trotec" loading="lazy">
+                    </div>
+                </div>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/adicional3_semana6.png" alt="Preparación - Acomodado de piezas" loading="lazy">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="/images/semana06/adicional4_semana6.png" alt="Preparación - Optimización" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Corte final -->
+            <div class="fab-block final-block">
+                <div class="fab-header">
+                    <div class="fab-icon final-icon">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+                    <div class="fab-title-group">
+                        <h3>Corte Final del Proyecto ErgoWave</h3>
+                        <p class="fab-subtitle">Proceso de corte láser completado exitosamente</p>
+                    </div>
+                </div>
+                <p class="fab-description">
+                    Finalmente, se confirmó la operación presionando "Aceptar" en el programa Trotec. El cabezal del láser comenzó a trabajar y, en menos de cinco minutos, se completó el corte de todas las piezas necesarias para el ensamblaje del proyecto ErgoWave.
+                </p>
+                <div class="image-grid grid-2">
+                    <div class="image-wrapper final-image">
+                        <img src="/images/semana06/adicional5_semana6.png" alt="Corte final - Proceso láser" loading="lazy">
+                    </div>
+                    <div class="image-wrapper final-image">
+                        <img src="/images/semana06/adicional6_semana6.png" alt="Corte final - Piezas completadas" loading="lazy">
+                    </div>
+                </div>
+                <div class="completion-badge">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Fabricación Completada</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evidencias Adicionales -->
+        <section class="doc-section evidence-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="bi bi-camera-fill"></i>
+                </div>
+                <div class="section-title-group">
+                    <h2>Evidencias Adicionales</h2>
+                    <p class="section-subtitle">Documentación del proceso de corte láser</p>
+                </div>
+            </div>
+
+            <!-- Cortadora -->
+            <div class="evidence-block">
+                <div class="evidence-header">
+                    <div class="evidence-icon">
+                        <i class="bi bi-scissors"></i>
+                    </div>
+                    <div class="evidence-title-group">
+                        <h3>Cortadora</h3>
+                        <p class="evidence-subtitle">Equipo y proceso de corte láser</p>
+                    </div>
+                </div>
+                <p class="evidence-description">
+                    El proceso de corte láser se realizó utilizando equipo profesional de alta precisión. La cortadora láser empleada permitió obtener cortes limpios y precisos en el material, garantizando la calidad dimensional de cada pieza del proyecto ErgoWave.
+                </p>
+                <div class="image-grid grid-1">
+                    <div class="image-wrapper evidence-image">
+                        <img src="/images/semana06/adicional5_semana6.png" alt="Cortadora láser - Equipo" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultados -->
+            <div class="evidence-block">
+                <div class="evidence-header">
+                    <div class="evidence-icon">
+                        <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div class="evidence-title-group">
+                        <h3>Resultados</h3>
+                        <p class="evidence-subtitle">Piezas cortadas con precisión milimétrica</p>
+                    </div>
+                </div>
+                <p class="evidence-description">
+                    Los resultados del corte láser superaron las expectativas, logrando piezas con bordes perfectamente definidos y dimensiones exactas. Cada componente del proyecto ErgoWave fue cortado con precisión milimétrica, asegurando un ensamblaje perfecto y funcional.
+                </p>
+                <div class="results-gallery">
+                    <div class="result-image-large">
+                        <img src="/images/semana06/adicional7_semana6.png" alt="Resultados - Proceso de corte" loading="lazy">
+                    </div>
+                    <div class="result-images-row">
+                        <div class="result-image-medium">
+                            <img src="/images/semana06/adicional8_semana6.png" alt="Resultados - Piezas cortadas 1" loading="lazy">
+                        </div>
+                        <div class="result-image-medium">
+                            <img src="/images/semana06/adicional9_semana6.png" alt="Resultados - Piezas cortadas 2" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </BaseLayout>
+
+<style>
+/* Documentation Container */
+.doc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero Section */
+.doc-hero {
+    text-align: center;
+    padding: 4rem 0 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero-badge i {
+    font-size: 1.25rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #f59e0b, #d97706, #ea580c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Section Styles */
+.doc-section {
+    margin-bottom: 5rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid var(--border);
+}
+
+.section-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.section-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.section-title-group h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Content Block */
+.content-block {
+    margin-bottom: 2.5rem;
+}
+
+.intro-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 16px;
+    border-left: 4px solid #6366f1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Process Grid */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.process-card {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.process-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.process-card:hover::before {
+    transform: scaleX(1);
+}
+
+.process-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+    border-color: #6366f1;
+}
+
+.process-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.process-icon.cutting {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+}
+
+.process-icon.marking {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.process-icon.engraving {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.process-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.process-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.process-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Joint List */
+.joint-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.joint-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 2px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.joint-item:hover {
+    transform: translateX(10px);
+    border-color: #8b5cf6;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+}
+
+.joint-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.3);
+}
+
+.joint-content h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.joint-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Tool Section */
+.tool-section {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(217, 119, 6, 0.05));
+    padding: 3rem;
+    border-radius: 24px;
+    border: 2px solid rgba(245, 158, 11, 0.2);
+}
+
+.tool-showcase {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.tool-info h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.tool-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.tool-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feature-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    border: 2px solid #f59e0b;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.feature-tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(245, 158, 11, 0.3);
+    background: #f59e0b;
+    color: white;
+}
+
+.feature-tag i {
+    font-size: 1.25rem;
+    color: #f59e0b;
+}
+
+.feature-tag:hover i {
+    color: white;
+}
+
+.feature-tag span {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.tool-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.tool-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Modeling Section */
+.modeling-section {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.03), rgba(139, 92, 246, 0.03));
+    padding: 3rem;
+    border-radius: 24px;
+    margin-top: 3rem;
+}
+
+.step-block {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.step-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.step-header-line {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-number-badge {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+}
+
+.step-header-line h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.step-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    padding-left: 85px;
+}
+
+/* Image Grids */
+.image-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.image-grid.grid-1 {
+    grid-template-columns: 1fr;
+}
+
+.image-grid.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    background: white;
+    aspect-ratio: 16 / 10;
+}
+
+.image-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.4s ease;
+    padding: 1rem;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+/* Evidences Section - Complete styling */
+.evidence-section {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.03), rgba(124, 58, 237, 0.03));
+    padding: 3rem;
+    border-radius: 24px;
+    margin-top: 3rem;
+    border: 2px solid rgba(139, 92, 246, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.evidence-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Enhanced Evidence Blocks */
+.evidence-block {
+    margin-bottom: 4rem;
+    padding: 3rem;
+    background: var(--surface);
+    border-radius: 24px;
+    box-shadow:
+        0 20px 60px rgba(139, 92, 246, 0.15),
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.evidence-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(139, 92, 246, 0.01));
+    border-radius: 24px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.evidence-block:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow:
+        0 30px 80px rgba(139, 92, 246, 0.25),
+        0 20px 50px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border-color: rgba(139, 92, 246, 0.4);
+}
+
+.evidence-block:hover::before {
+    opacity: 1;
+}
+
+.evidence-block:last-child {
+    margin-bottom: 0;
+}
+
+.evidence-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid linear-gradient(90deg, rgba(139, 92, 246, 0.3), rgba(139, 92, 246, 0.1));
+    position: relative;
+}
+
+.evidence-header::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.evidence-block:hover .evidence-header::after {
+    width: 100px;
+}
+
+.evidence-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed, #a855f7);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow:
+        0 15px 40px rgba(139, 92, 246, 0.4),
+        0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.evidence-icon::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.evidence-block:hover .evidence-icon {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow:
+        0 20px 50px rgba(139, 92, 246, 0.5),
+        0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.evidence-block:hover .evidence-icon::before {
+    opacity: 1;
+    animation: shine 0.6s ease-out;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.evidence-icon i {
+    font-size: 2.5rem;
+    color: white;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.evidence-title-group h3 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+}
+
+.evidence-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.evidence-description {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.02), rgba(124, 58, 237, 0.02));
+    border-radius: 16px;
+    border-left: 4px solid #8b5cf6;
+    position: relative;
+}
+
+.evidence-description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), transparent);
+    border-radius: 16px;
+    pointer-events: none;
+}
+
+.image-grid.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.evidence-image {
+    border: 3px solid #8b5cf6;
+    aspect-ratio: 16 / 10;
+    background:
+        linear-gradient(135deg, rgba(139, 92, 246, 0.03), rgba(124, 58, 237, 0.03)),
+        var(--surface);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow:
+        0 15px 40px rgba(139, 92, 246, 0.2),
+        0 5px 20px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.evidence-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.15), transparent);
+    transition: left 0.6s ease;
+    z-index: 1;
+}
+
+.evidence-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.evidence-image:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow:
+        0 25px 60px rgba(139, 92, 246, 0.3),
+        0 15px 40px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border-color: #7c3aed;
+}
+
+.evidence-image:hover::before {
+    left: 100%;
+}
+
+.evidence-image:hover::after {
+    opacity: 1;
+}
+
+.evidence-image img {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s ease;
+    border-radius: 16px;
+}
+
+/* Results Gallery - Enhanced Layout */
+.results-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.result-image-large {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.2);
+    transition: all 0.4s ease;
+}
+
+.result-image-large:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(139, 92, 246, 0.3);
+}
+
+.result-image-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    min-height: 300px;
+}
+
+.result-images-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.result-image-medium {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+    transition: all 0.3s ease;
+}
+
+.result-image-medium:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.25);
+}
+
+.result-image-medium img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    min-height: 250px;
+}
+
+/* Fabrication Section */
+.fabrication-section {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(5, 150, 105, 0.05));
+    padding: 3rem;
+    border-radius: 24px;
+    margin-top: 3rem;
+    border: 2px solid rgba(16, 185, 129, 0.2);
+}
+
+.fab-block {
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.fab-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(16, 185, 129, 0.15);
+}
+
+.fab-block:last-child {
+    margin-bottom: 0;
+}
+
+.fab-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.fab-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+}
+
+.fab-icon i {
+    font-size: 1.75rem;
+    color: white;
+}
+
+.fab-icon.final-icon {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+}
+
+.fab-title-group h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.fab-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.fab-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+/* Final Block */
+.final-block {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(217, 119, 6, 0.05));
+    border: 2px solid rgba(245, 158, 11, 0.3);
+}
+
+.final-image {
+    border: 3px solid #10b981;
+    aspect-ratio: 16 / 10;
+}
+
+.final-image img {
+    padding: 0.75rem;
+}
+
+.completion-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.completion-badge i {
+    font-size: 1.5rem;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+    /* Evidence Blocks - Simplified like Step Blocks */
+.evidence-block {
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+    background: var(--surface);
+    border-radius: 24px;
+    border: 2px solid var(--border);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.evidence-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.2);
+    border-color: #8b5cf6;
+}
+
+.evidence-block:last-child {
+    margin-bottom: 0;
+}
+
+.evidence-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid var(--border);
+}
+
+.evidence-header::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.evidence-block:hover .evidence-header::after {
+    width: 100px;
+}
+
+.evidence-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+    transition: all 0.3s ease;
+}
+
+.evidence-block:hover .evidence-icon {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(139, 92, 246, 0.4);
+}
+
+.evidence-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.evidence-title-group h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.evidence-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.evidence-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    padding-left: 85px;
+}
+
+.image-grid.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.evidence-image {
+    border: 2px solid #8b5cf6;
+    aspect-ratio: 16 / 10;
+    background: var(--surface);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.evidence-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.2);
+    border-color: #7c3aed;
+}
+
+.evidence-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.evidence-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header {
+        flex-direction: column;
+    }
+
+    .image-grid.grid-3 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .step-description {
+        padding-left: 0;
+    }
+
+    .image-wrapper {
+        aspect-ratio: 16 / 10;
+    }
+
+    .image-grid.grid-1 .image-wrapper {
+        aspect-ratio: 16 / 10;
+    }
+
+    .evidence-section {
+        padding: 1.5rem;
+    }
+
+    .evidence-section::before {
+        display: none;
+    }
+
+    .evidence-block {
+        padding: 1.5rem;
+        backdrop-filter: blur(5px);
+    }
+
+    .evidence-block:hover {
+        transform: translateY(-3px) scale(1.005);
+    }
+
+    .evidence-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .evidence-header::after {
+        display: none;
+    }
+
+    .evidence-title-group h3 {
+        font-size: 1.5rem;
+        letter-spacing: normal;
+    }
+
+    .evidence-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .evidence-icon i {
+        font-size: 2rem;
+    }
+
+    .evidence-icon::before {
+        display: none;
+    }
+
+    .evidence-description {
+        padding-left: 0;
+        font-size: 0.95rem;
+        background: rgba(139, 92, 246, 0.01);
+        color: var(--text-primary);
+    }
+
+    .result-images-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .result-image-large img {
+        min-height: 200px;
+        padding: 1.5rem;
+    }
+
+    .result-image-medium img {
+        min-height: 180px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .doc-container {
+        padding: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .joint-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-header-line {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-header-line h3 {
+        font-size: 1.5rem;
+    }
+
+    .step-number-badge {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .modeling-section {
+        padding: 1.5rem;
+    }
+
+    .fab-block {
+        padding: 1.5rem;
+    }
+
+    .fab-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fab-title-group h3 {
+        font-size: 1.5rem;
+    }
+
+    .fabrication-section {
+        padding: 1.5rem;
+    }
+
+    .completion-badge {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .result-images-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .result-image-large img {
+        min-height: 150px;
+        padding: 1rem;
+    }
+
+    .result-image-medium img {
+        min-height: 140px;
+        padding: 0.75rem;
+    }
+}
+</style>
