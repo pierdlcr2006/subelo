@@ -1276,10 +1276,122 @@ body {
     transform: translateY(-4px);
 }
 
+/* Team Member Photos - Modern Tech Design */
 .member-avatar {
-    font-size: 4rem;
-    color: var(--accent-primary);
-    margin-bottom: 1rem;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    border: 3px solid transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        0 20px 40px rgba(99, 102, 241, 0.3),
+        0 10px 20px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.member-avatar::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 70%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.member-avatar:hover {
+    transform: scale(1.05) translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 30px 60px rgba(99, 102, 241, 0.4),
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        inset 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+.member-avatar:hover::before {
+    opacity: 1;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.member-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+    position: relative;
+    z-index: 2;
+    filter: brightness(1.1) contrast(1.1) saturate(1.1);
+}
+
+.member-photo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2) contrast(1.2) saturate(1.2);
+}
+
+.team-member {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.team-member:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--accent-primary);
+    box-shadow:
+        0 25px 50px rgba(99, 102, 241, 0.25),
+        0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:hover::before {
+    opacity: 1;
+}
+
+.team-member:hover .member-avatar {
+    border-color: var(--accent-primary);
+    box-shadow:
+        0 25px 50px rgba(99, 102, 241, 0.4),
+        0 15px 30px rgba(0, 0, 0, 0.3),
+        inset 0 2px 0 rgba(255, 255, 255, 0.4);
 }
 
 .member-info h4 {
@@ -1289,9 +1401,59 @@ body {
     color: var(--text-primary);
 }
 
-.member-info span {
-    color: var(--text-secondary);
-    font-size: 0.875rem;
+/* Mobile responsive for team members */
+@media (max-width: 768px) {
+    .team-member {
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .member-avatar {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .member-photo {
+        filter: brightness(1.05) contrast(1.05) saturate(1.05);
+    }
+
+    .member-photo:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1) contrast(1.1) saturate(1.1);
+    }
+
+    .member-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .team-member:hover {
+        transform: translateY(-4px) scale(1.01);
+    }
+
+    .member-avatar::before {
+        display: none;
+    }
+
+    .member-avatar:hover {
+        transform: scale(1.02) translateY(-2px);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        padding: 1.5rem 1rem;
+    }
+
+    .member-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .member-info h4 {
+        font-size: 1rem;
+    }
 }
 
 /* Features Section */
