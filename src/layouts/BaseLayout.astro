@@ -20,7 +20,9 @@ const { title, styles } = Astro.props;
     <link rel="stylesheet" href="/styles.css">
     {styles && styles.map(style => <link rel="stylesheet" href={style}>)}
 </head>
-    <div class="background-effects">
+<body>
+    <div class="app-container">
+        <div class="background-effects">
         <div class="particles-container">
             <div class="particle particle-1"></div>
             <div class="particle particle-2"></div>
@@ -38,6 +40,8 @@ const { title, styles } = Astro.props;
         <slot name="header">
             <Header />
         </slot>
+        <!-- Header placeholder to prevent layout shift with fixed positioning -->
+        <div class="header-placeholder" aria-hidden="true"></div>
         <main class="main-content">
             <slot />
         </main>
